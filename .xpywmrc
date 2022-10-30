@@ -1,0 +1,55 @@
+# specify the title font
+global TITLE_FONT
+TITLE_FONT = '-*-fixed-*-*-*-*-13-*-*-*-*-*-*-*'
+
+KEYBOARD_HANDLER['w'] = {
+    'modifier': X.Mod4Mask, 'command': 'firefox &'
+}
+
+KEYBOARD_HANDLER['e'] = {
+    'modifier': X.Mod4Mask, 'command': 'thunar &'
+}
+
+KEYBOARD_HANDLER['r'] = {
+    'modifier': X.Mod4Mask, 'command': 'dmenu_run &'
+}
+
+KEYBOARD_HANDLER['t'] = {
+    'modifier': X.Mod4Mask, 'command': 'alacritty &'
+}
+
+KEYBOARD_HANDLER['a'] = {
+    'modifier': X.Mod4Mask, 'command': 'pavucontrol &'
+}
+
+KEYBOARD_HANDLER['s'] = {
+    'modifier': X.Mod4Mask, 'command': 'i3lock -c 000000 &'
+}
+
+KEYBOARD_HANDLER['d'] = {
+    'modifier': X.Mod4Mask, 'method': 'layout_all_windows'
+}
+
+KEYBOARD_HANDLER['f'] = {
+    'modifier': X.Mod4Mask, 'method': 'cb_maximize_window'
+}
+
+KEYBOARD_HANDLER['g'] = {
+    'modifier': X.Mod4Mask, 'method': 'tile_all_windows'
+}
+
+KEYBOARD_HANDLER['k'] = {
+    'modifier': X.Mod4Mask, 'method': 'cb_destroy_window'
+}
+
+KEYBOARD_HANDLER['z'] = {
+    'modifier': X.Mod4Mask, 'method': 'cb_prev_vscreen'
+}
+
+KEYBOARD_HANDLER['x'] = {
+    'modifier': X.Mod4Mask, 'method': 'cb_next_vscreen'
+}
+
+KEYBOARD_HANDLER['Tab'] = {
+    'modifier': X.Mod4Mask, 'method': 'cb_focus_next_window'
+}
