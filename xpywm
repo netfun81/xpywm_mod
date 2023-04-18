@@ -60,7 +60,7 @@ KEYBOARD_HANDLER = {
     'Tab':
     {'modifier': X.Mod4Mask, 'method': 'cb_focus_next_window'
 	},
-    'j':
+    'o':
 	{'modifier': X.Mod4Mask, 'method': 'cb_raise_or_lower_window'
     },
     'f':
@@ -78,7 +78,7 @@ KEYBOARD_HANDLER = {
     'k':
 	{'modifier': X.Mod4Mask, 'method': 'cb_destroy_window'
     },
-    'n':
+    'p':
 	{'modifier': X.Mod4Mask, 'method': 'cb_toggle_vscreen'
     },
     'Left':
