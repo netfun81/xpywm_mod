@@ -136,8 +136,8 @@ KEYSYM_TBL = {
 LAYOUT_OFFSET = 0
 # regexp: [x, y, width, height]
 LAYOUT_RULES = {
-    r'xterm|xfce4-terminal|pavucontrol': [.5, 0, .5, 1],
-    r'thunar|geany': [0, 0, .5, 1],
+    r'xterm|xfce4-terminal|pavucontrol|skype': [.5, 0, .5, 1],
+    r'thunar|geany|discord': [0, 0, .5, 1],
     r'firefox|chrom(e|ium)':
     [0 - LAYOUT_OFFSET, 0, 1 + LAYOUT_OFFSET, 1],
 }
