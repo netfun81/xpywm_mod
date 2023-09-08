@@ -29,9 +29,11 @@ import time
 
 from Xlib import X, display, XK
 
-FRAME_WIDTH = 2
+FRAME_WIDTH = 0
+#2
 FRAME_COLOR = 'aquamarine1'
-TITLE_WIDTH = 96
+TITLE_WIDTH = 0
+#96
 TITLE_HEIGHT = 0
 TITLE_FONT = '*-fixed-*-*-*-*-13-*-*-*-*-*-*-*'
 TITLE_COLOR = 'aquamarine3'
@@ -106,7 +108,7 @@ KEYBOARD_HANDLER = {
 	{'modifier': X.Mod4Mask, 'command': 'slock &'
     },
     'l':
-	{'modifier': X.Mod4Mask, 'command': 'loginctl suspend &'
+	{'modifier': X.Mod4Mask, 'command': 'systemctl suspend &'
     },
     'z': {'modifier': X.Mod4Mask, 'method': 'select_vscreen', 'args': 0},
     'x': {'modifier': X.Mod4Mask, 'method': 'select_vscreen', 'args': 1},
@@ -394,8 +396,10 @@ class WindowManager():
             window = self.screen.root.create_window(
                 0,
                 0,
-                16,
-                16,
+                0,
+                 #16,
+                0,
+                 #16,
                 0,
                 self.screen.root_depth,
                 X.InputOutput,
